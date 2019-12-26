@@ -1,7 +1,13 @@
 # Consignments Service
 
 ## Building
-To build, you'll need to install `protobuf` and install go modules associated with this service then run the following command
+This will provide a docker container, namely `consignments-service` with all the required modules.
 ```
 make build
+```
+
+## Running
+Running using the following command will expose the service on port `50051`
+```
+make run
 ```
