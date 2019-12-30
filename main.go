@@ -8,10 +8,13 @@ import (
 	"github.com/micro/go-micro"
 )
 
+// Repository - used to simulate datastore
 type Repository interface {
 	Create(*pb.Consignment) (*pb.Consignment, error)
 	GetAll() []*pb.Consignment
 }
+
+// ConsignmentRepository - implementation of datastore
 type ConsignmentRepository struct {
 	consignments []*pb.Consignment
 }
